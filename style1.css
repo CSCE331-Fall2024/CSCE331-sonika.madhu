@@ -1,0 +1,125 @@
+h1 {
+    text-align: center;
+    font-family: "Papyrus", fantasy ;
+    font-size: 40px;
+    
+    
+}
+.pic_aboutme{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;    /* Align items to the left, which is the default */
+    width: 80%;       /* Set the width of the container */
+    margin: auto;           /* Center the container horizontally on the page */
+
+}
+.mypic {
+    
+    flex: 0 0 300px;        /* Fixed width for the image container */
+    margin-right: 8px;       /* Space between the image container and the paragraph container */
+}
+.mypicright {
+    width: 100%;       /* Image fills the width of its container */
+    height: auto;
+}
+
+.aboutme {
+    flex: 1;      /* Allow the paragraph container to grow and fill available space */
+    font-family: "Papyrus", fantasy;
+    font-weight: bold;
+    
+    
+    
+    
+    
+}
+.p1 {
+    max-width: 700px;   /* Set a maximum width for the paragraph */
+    text-align: left;
+    font-family: "Papyrus", fantasy;
+    font-size: 18px;
+    margin-bottom: 70px;
+    
+    
+}
+.icons {
+    
+    text-align: left;
+    font-size: 18px; 
+    background-color: lightcyan;
+
+}
+
+.icon-large {
+    font-size: 40px;
+}
+
+.email, .phone, .linkedin {
+    margin-bottom: 5px;     /* Space between each contact item */
+    
+}
+
+.hobbies_title {
+    display: flex;
+    justify-content:flex-end;
+    width: 80%;
+    margin: auto;
+    font-family: "Papyrus", fantasy;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: lightgoldenrodyellow;
+}
+.hobbytitle {
+    text-align: right;     
+    flex:1;
+    
+}
+.hobbypara {
+    max-width: 700px;
+    text-align: right;     
+    margin-left: auto;
+    
+}
+.hobby_image {
+    flex-shrink: 0;          /* Prevent the image from shrinking */
+    width: 150px;            /*  width of the image container */
+    height: 150px;           /*  height of the image container */
+    border-radius: 50%;      /* Make the image container a circle */
+    overflow: hidden;        /* Hide any overflow outside the circle */
+    margin-right: 10px;      /* Add space to the right of the image */
+}
+.hobby_image img {
+    width: 100%;             /* Image fills the width of its container */
+    height: 100%;            /* Image fills the height of its container */
+    object-fit: cover;       /* Ensures the image covers the container area */
+    object-position: center; /* Centers the image within the container */
+}
+.button {
+    display: inline-block; /* Makes the <a> behave like a button */
+    padding: 10px 20px; /* Adds space inside the button */
+    margin: 30px; /* Adds space between buttons */
+    font-size: 16px; 
+    color: black; /* Text color */
+    background-color: lightcyan; /* Button background color */
+    text-align: center; /* Centers text */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 5px; /* Rounded corners */
+    border: 5px black; /* Border around the button */
+}
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes padding */
+    display: flex; /* Aligns items horizontally */
+    justify-content: center; /* Centers the menu */
+}
+nav ul li {
+    margin: 0 20px; /* Adds space between menu items */
+}
+
+
+
+
+
+
+
+
