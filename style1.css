@@ -5,6 +5,12 @@ h1 {
     
     
 }
+.home-page {
+    background-image: url("https://i.pinimg.com/736x/63/62/7f/63627f5a66a92a604128897c041770a8.jpg") ;
+    background-size: cover;
+    background-position: center;
+
+}
 .pic_aboutme{
     display: flex;
     align-items: flex-start;
@@ -46,7 +52,7 @@ h1 {
     
     text-align: left;
     font-size: 18px; 
-    background-color: lightcyan;
+    
 
 }
 
@@ -67,7 +73,7 @@ h1 {
     font-family: "Papyrus", fantasy;
     font-weight: bold;
     font-size: 18px;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(233, 200, 188, 0.7);;
 }
 .hobbytitle {
     text-align: right;     
@@ -100,11 +106,11 @@ h1 {
     margin: 30px; /* Adds space between buttons */
     font-size: 16px; 
     color: black; /* Text color */
-    background-color: lightcyan; /* Button background color */
+    background-color: lightcoral; /* Button background color */
     text-align: center; /* Centers text */
     text-decoration: none; /* Removes underline from links */
     border-radius: 5px; /* Rounded corners */
-    border: 5px black; /* Border around the button */
+    border: 20px black; /* Border around the button */
 }
 nav ul {
     list-style-type: none; /* Removes bullet points */
@@ -114,6 +120,75 @@ nav ul {
 }
 nav ul li {
     margin: 0 20px; /* Adds space between menu items */
+}
+.picproj2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;    /* Align items to the left, which is the default */
+    width: 90%;       /* Set the width of the container */
+    margin: auto;           /* Center the container horizontally on the page */
+    font-family: "Papyrus", fantasy;
+    font-weight: bold;
+
+}
+
+.treepic {
+    
+    flex: 0 0 500px;        /* Fixed width for the image container */
+    margin-right: 8px;       /* Space between the image container and the paragraph container */
+}
+.treepicright {
+    width: 100%;       /* Image fills the width of its container */
+    height: auto;
+}
+.logisimpic_proj1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;    /* Align items to the left, which is the default */
+    width: 90%;       /* Set the width of the container */
+    margin: auto;           /* Center the container horizontally on the page */
+    margin-bottom: 60px;
+    font-family: "Papyrus", fantasy;
+    font-weight: bold;
+
+}
+.logisimpic {
+    
+    flex: 0 0 500px;        /* Fixed width for the image container */
+    margin-right: 8px;       /* Space between the image container and the paragraph container */
+}
+.logisimpicleft {
+    width: 100%;       /* Image fills the width of its container */
+    height: auto;
+}
+.otherproj{
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    font-family: "Papyrus", fantasy;
+    font-weight: bold;
+
+}
+.otherproj h9 {
+    font-size: 17px;       /* Adjust size for the main title */
+    margin-bottom: 20px;   /* Space below the main title */
+}
+
+/* Style for the project titles */
+.otherproj h10 {
+    font-size: 17px;       /* Adjust size for the project titles */
+    margin-top: 20px;      /* Space above each project title */
+    margin-bottom: 5px;    /* Space below each project title */
+}
+.otherproj .tic,
+.otherproj .hangman {
+    margin-bottom: 20px;
+}
+.portpg {
+    background-image: url("https://i.pinimg.com/564x/02/b6/75/02b67500977bb71bd8792db0358e9619.jpg") ;
+    background-size: cover;
+    background-position: center;
+
 }
 
 
