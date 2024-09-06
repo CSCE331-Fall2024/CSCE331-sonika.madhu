@@ -4,7 +4,7 @@ h1 {
     font-size: 40px;
     
     
-} 
+}
 .home-page {
     background-image: url("https://i.pinimg.com/736x/63/62/7f/63627f5a66a92a604128897c041770a8.jpg") ;
     background-size: cover;
@@ -119,19 +119,6 @@ h1 {
     text-decoration: none; /* Removes underline from links */
     border-radius: 5px; /* Rounded corners */
     border: 20px black; 
-}
-.Tbutton {
-    display: inline-block; 
-    padding: 10px 20px; /* Adds space inside the button */
-    margin: 30px; /* Adds space between buttons */
-    font-size: 16px; 
-    color: black; 
-    background-color: lightblue; /* Button background color */
-    text-align: center; /* Centers text */
-    text-decoration: none; /* Removes underline from links */
-    border-radius: 5px; /* Rounded corners */
-    border: 20px black;
-
 }
 nav ul {
     list-style-type: none; /* Removes bullet points */

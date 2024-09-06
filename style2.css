@@ -1,0 +1,340 @@
+body, html {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    max-width: 100%; /* Prevent any element from exceeding the width of the viewport */
+}
+.home-page {
+    background-image: url("https://www.shutterstock.com/image-vector/vector-flat-space-design-background-600nw-572708635.jpg") ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.titleContainer h1 {
+    text-align: center;
+    color: white;                 
+    font-size: 3em;               
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  
+    font-family: 'Courier New', Courier, monospace;
+}
+.Tbutton {
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin: 30px; /* Adds space between buttons */
+    font-size: 16px; 
+    color: black; 
+    background-color: lightblue; 
+    text-align: center; 
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 5px; /* Rounded corners */
+    border: 20px black;
+
+}
+.button {
+    display: inline-block; 
+    padding: 10px 20px; /* Adds space inside the button */
+    margin: 30px; /* Adds space between buttons */
+    font-size: 16px; 
+    color: black; 
+    background-color: lightgray; /* Button background color */
+    text-align: center; /* Centers text */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 5px; /* Rounded corners */
+    border: 20px black; 
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px; 
+    height: 100%; 
+    
+    padding-top: 50px; 
+}
+
+
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column; /* Makes the links stack vertically */
+    justify-content: flex-start; /* Aligns links to the top of the nav bar */
+    align-items: center; /* Centers the links horizontally */
+}
+
+
+nav ul li {
+    width: 70%; /*  links span the width of the nav bar */
+}
+
+
+nav ul li a {
+    display: block;
+    width: 70%; 
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #444;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between links */
+}
+
+.pic_aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; 
+    padding: 20px;
+    gap: 60px;
+    margin-right: 90px;
+    
+}
+.aboutme h2 {
+    font-size: 30px;
+}
+
+.aboutme {
+    width: 550px; 
+    height: 550px; 
+    border-radius: 50%; 
+    background-color: lightgray; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+.mypic {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff; 
+    overflow: hidden;
+    margin-bottom: 300px;
+}
+.mypic img {
+    width: 100%; /*  image fills the circle */
+    height: auto; 
+    object-fit: cover; /*  image covers the area without distorting */
+}
+
+.icons {
+    position: absolute; 
+    top: 100%;
+    left: 60px; 
+    bottom: 20px; 
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    background-color: lightgray; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
+    z-index: 1000; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.connectcontent {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.icon-large {
+    font-size: 24px; 
+    
+}
+
+.connectcontent a, .connectcontent span {
+    display: block; 
+    margin-top: 5px; /* Space between items */
+    
+}
+.hobbiesWrap {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px; /* Space between photo and hobbies section */
+    margin-left: 500px;
+    margin-bottom: 900px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+  
+.hobbies_title {
+    position: relative;
+    width: 500px; 
+    height: 500px; 
+    background-color: lightgray; 
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow: hidden;
+}
+  
+.hobby_image img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+  
+.hobbytitle {
+    margin-top: 20px;
+}
+  
+.hobbypara {
+    font-size: 12px; 
+}
+
+.projectsWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.logisimpic_proj1, .picproj2 {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    
+}
+  
+.project1 {
+    
+    max-width: 300px; /* Adjust width as needed */
+    background-color: lightgrey;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+  
+.project1 h7, .project2 h8 {
+    font-size: 18px; /* Adjust font size as needed */
+    margin-top: 0;
+}
+    
+.logisimpic {
+    display: flex;
+    justify-content: flex-start;
+}
+  
+.logisimpic img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 300px; /* Adjust size as needed */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+.project2 {
+    max-width: 300px;
+    height: 500px;
+    background-color: lightgrey;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 300px;
+}
+.treepic {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 700px;
+    
+}
+  
+.treepic img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: 100%; /* Maintains aspect ratio */
+    max-width: 300px; /* Adjust size as needed */
+    border-radius: 8px; /* Optional rounded corners */
+}
+.otherproj {
+    max-width: 300px;
+    height: 400px;
+    background-color: lightgrey;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 400px;
+    font-family: 'Courier New', Courier, monospace;
+}
+  
+.otherproj h9 {
+    font-size: 18px;
+    margin-top: 0;
+}
+.otherproj h11 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.portpg {
+    background-image: url("https://i.pinimg.com/564x/f8/1f/32/f81f32f7968e9282f5194a41a2837313.jpg") ;
+    background-size: cover;
+    background-position: center;
+
+}
+.PortContainer h1 {
+    text-align: center;
+    color: white;                 
+    font-size: 4em;               
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
