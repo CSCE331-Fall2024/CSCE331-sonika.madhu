@@ -41,6 +41,7 @@ body, html {
     text-decoration: none; /* Removes underline from links */
     border-radius: 5px; /* Rounded corners */
     border: 20px black; 
+    z-index:1000;
 }
 
 
@@ -51,7 +52,7 @@ nav {
     right: 0;
     width: 300px; 
     height: 100%; 
-    
+    z-index: 1000;
     padding-top: 50px; 
 }
 
@@ -64,6 +65,7 @@ nav ul {
     flex-direction: column; /* Makes the links stack vertically */
     justify-content: flex-start; /* Aligns links to the top of the nav bar */
     align-items: center; /* Centers the links horizontally */
+    
 }
 
 
@@ -82,6 +84,7 @@ nav ul li a {
     background-color: #444;
     border-radius: 5px;
     margin-bottom: 10px; /* Space between links */
+    z-index: 1001;
 }
 
 .pic_aboutme {
@@ -236,7 +239,7 @@ nav ul li a {
 
   
 .project1 h7, .project2 h8 {
-    font-size: 18px; /* Adjust font size as needed */
+    font-size: 18px; 
     margin-top: 0;
 }
     
@@ -246,10 +249,10 @@ nav ul li a {
 }
   
 .logisimpic img {
-    width: 100%; /* Ensures the image takes up the full width of its container */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 300px; /* Adjust size as needed */
-    border-radius: 8px; /* Optional rounded corners */
+    width: 100%; 
+    height: auto; 
+    max-width: 300px; 
+    border-radius: 8px; 
 }
 
 .project2 {
@@ -271,10 +274,10 @@ nav ul li a {
 }
   
 .treepic img {
-    width: 100%; /* Ensures the image takes up the full width of its container */
-    height: 100%; /* Maintains aspect ratio */
-    max-width: 300px; /* Adjust size as needed */
-    border-radius: 8px; /* Optional rounded corners */
+    width: 100%; 
+    height: 100%; 
+    max-width: 300px; 
+    border-radius: 8px; 
 }
 .otherproj {
     max-width: 300px;
@@ -313,28 +316,241 @@ nav ul li a {
     margin-top: 150px;
 }
 
+.timelineWrap {
+    position: relative;
+    width: 90%;
+    min-height: 100vh;
+    padding: 40px 0;
+    height: 100vh; /* Full viewport height for debugging */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    
+}
+
+/* The vertical line in the middle */
+.timeline {
+    position: absolute;
+    left: 50%; /* Center the timeline */
+    transform: translateX(-50%);
+    width: 10px; /* Narrower timeline line */
+    
+    height: 100vh; /* Full height of the timelineWrap */
+    top:0;
+    bottom: 0;
+    z-index: 0;
+    
+}
+
+/* Styling individual events */
+.event {
+    position: relative;
+    width: 50%; /* Each event takes up half the width of the page */
+    margin-bottom: 30px;
+    border: 1px solid blue; /* Debugging border */
+    background-color: #007bff;
+    display: flex;
+    justify-content: center; /* Center the circles */
+}
+
+/* Position odd events to the left */
+.event:nth-child(odd) {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+/* Position even events to the right */
+.event:nth-child(even) {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+/* Circular content boxes */
+.resume, .skills, .interestpara, .skillspic {
+    width: 450px; /* Smaller fixed size */
+    height: 450px;
+    
+    border-radius: 50%;
+    background-color:lightgray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure content stays within the circle */
+    z-index: 1;
+
+    font-family: 'Courier New', Courier, monospace;
+}
 
 
 
+/* Ensure the content inside the circles is centered */
+.skills p, .interestpara p {
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.resume {
 
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 
+}
+.skills h14, .interestpara h15{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
 
+/* Links inside the circle */
+.event a.button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    z-index: 2; /* Ensure links are clickable */
+    font-family: 'Courier New', Courier, monospace;
+}
 
+/* Ensure the timeline stays behind the buttons and circles */
+.timeline {
+    z-index: 0;
+}
 
+.qualpg {
+    background-image: url("https://i.pinimg.com/originals/aa/76/46/aa76467f63a2f023a5d484ba26aa0849.jpg") ;
+    background-size: cover;
+    background-position: center;
 
+}
 
+.volun_pic {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 50%; 
+    padding: 20px;
+    gap: 60px;
+    margin-right: 90px;
+    
+}
 
+.volunteering {
+    width: 700px; 
+    height: 700px; 
+    border-radius: 50%; 
+    background-color: lightgray; 
+    background-image: url('https://media.istockphoto.com/id/809925522/vector/isolated-moon-made-in-flat-style.jpg?s=612x612&w=0&k=20&c=rLDDEAd90555WZ42dgdPEDGmNkfb1CTOFNu4RKqQXto='); 
+    background-size: cover; /* Ensures the image covers the circle */
+    background-position: center; /* Centers the image within the circle */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+    padding: 20px;
+    font-size: 13px;
+    font-weight:600;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+.garden h20, .foodbank h21 {
+    font-size: 20px;
+}
 
-  
+.onlypic {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff; 
+    overflow: hidden;
+    margin-bottom: 300px;
+}
+.onlypic img {
+    width: 100%; /*  image fills the circle */
+    height: auto; 
+    object-fit: cover; /*  image covers the area without distorting */
+}
+.tutoring {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 50%; 
+    padding: 20px;
+    margin-right: 300px;
+    margin-bottom: 20px;
+    
+}
 
+.mentor {
+    width: 450px; 
+    height: 450px; 
+    border-radius: 50%; 
+    background-color: lightgray; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+    padding: 20px;
+    font-size: 13px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+.mentor h22 {
+    font-size: 20px;
+}
+.servicepg {
+    background-image: url("https://4kwallpapers.com/images/wallpapers/stars-galaxy-2560x2560-10307.jpg") ;
+    background-size: cover;
+    background-position: center;
 
+}
+.ethical-concerns{
+    width:60%;
+    margin:auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.ethical-concerns a{
+    color: white;
+}
+.prompt-box{
+    width:60%;
+    margin:auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color:lightgray;
 
+}
+.AIpg {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/268/880/non_2x/a-galaxy-space-theme-background-vector.jpg") ;
+    background-size: cover;
+    background-position: center;
 
-
-
-
-
-
+}
 
 
 
