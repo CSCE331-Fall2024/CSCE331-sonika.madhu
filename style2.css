@@ -321,10 +321,10 @@ nav ul li a {
     width: 90%;
     min-height: 100vh;
     padding: 40px 0;
-    height: 100vh; /* Full viewport height for debugging */
+    height: 100vh; 
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
     
 }
 
@@ -333,7 +333,7 @@ nav ul li a {
     position: absolute;
     left: 50%; /* Center the timeline */
     transform: translateX(-50%);
-    width: 10px; /* Narrower timeline line */
+    width: 10px; 
     
     height: 100vh; /* Full height of the timelineWrap */
     top:0;
@@ -342,15 +342,17 @@ nav ul li a {
     
 }
 
-/* Styling individual events */
+
 .event {
     position: relative;
     width: 50%; /* Each event takes up half the width of the page */
     margin-bottom: 30px;
-    border: 1px solid blue; /* Debugging border */
+    border: 1px solid blue; 
     background-color: #007bff;
     display: flex;
-    justify-content: center; /* Center the circles */
+    justify-content: center; 
+    
+    
 }
 
 /* Position odd events to the left */
@@ -364,10 +366,23 @@ nav ul li a {
     justify-content: flex-start;
     text-align: left;
 }
+.resume {
+    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+    width: 450px; 
+    height: 450px;
+    border-radius: 50%;
+    background-color: lightgray;
+    padding: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 /* Circular content boxes */
-.resume, .skills, .interestpara, .skillspic {
-    width: 450px; /* Smaller fixed size */
+.skills, .interestpara, .skillspic {
+    width: 450px; 
     height: 450px;
     
     border-radius: 50%;
@@ -378,15 +393,14 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Ensure content stays within the circle */
+    overflow: hidden; 
     z-index: 1;
 
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 
-
-/* Ensure the content inside the circles is centered */
 .skills p, .interestpara p {
     font-size: 13px;
     text-align: center;
@@ -397,7 +411,7 @@ nav ul li a {
 .resume {
 
     font-size: 18px;
-    text-align: center;
+    text-align:center;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
 
@@ -408,7 +422,7 @@ nav ul li a {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* Links inside the circle */
+
 .event a.button {
     padding: 8px 16px;
     background-color: #007bff;
@@ -416,11 +430,11 @@ nav ul li a {
     text-decoration: none;
     border-radius: 8px;
     margin-top: 10px;
-    z-index: 2; /* Ensure links are clickable */
+    z-index: 2; 
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* Ensure the timeline stays behind the buttons and circles */
+/* timeline stays behind the buttons and circles */
 .timeline {
     z-index: 0;
 }
@@ -449,8 +463,8 @@ nav ul li a {
     border-radius: 50%; 
     background-color: lightgray; 
     background-image: url('https://media.istockphoto.com/id/809925522/vector/isolated-moon-made-in-flat-style.jpg?s=612x612&w=0&k=20&c=rLDDEAd90555WZ42dgdPEDGmNkfb1CTOFNu4RKqQXto='); 
-    background-size: cover; /* Ensures the image covers the circle */
-    background-position: center; /* Centers the image within the circle */
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -482,9 +496,9 @@ nav ul li a {
     margin-bottom: 300px;
 }
 .onlypic img {
-    width: 100%; /*  image fills the circle */
+    width: 100%; 
     height: auto; 
-    object-fit: cover; /*  image covers the area without distorting */
+    object-fit: cover; 
 }
 .tutoring {
     display: flex;
@@ -551,6 +565,11 @@ nav ul li a {
     background-position: center;
 
 }
+
+
+
+
+
 
 
 
